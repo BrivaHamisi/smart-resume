@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import GeneralInfoForm from "./forms/GeneralInfoForm";
 
 export default function ResumeEditor() {
     return ( // Make sure to return the JSX
@@ -14,9 +15,14 @@ export default function ResumeEditor() {
             </header>
             <main className="relative grow">
                 <div className="absolute bottom-0 top-0 flex w-full">
-
+                    <div className="w-full p-3 md:w-1/2">
+                    <GeneralInfoForm/>
+                    </div>
+                    <div className="grow md:border-r"/>
+                    <div className="hidden w-1/2 md:flex">
+                    Right
+                    </div>
                 </div>
-
             </main>
             <footer className="w-full border-t px-3 py-5">
                 <div className="max-w-7xl mx-auto flex flex-wrap justify-between gap-3">
